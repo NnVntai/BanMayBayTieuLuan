@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VECHUYENBAY" targetNamespace="http://tempuri.org/VECHUYENBAY.xsd" xmlns:mstns="http://tempuri.org/VECHUYENBAY.xsd" xmlns="http://tempuri.org/VECHUYENBAY.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VECHUYENBAY" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VECHUYENBAY" msprop:Generator_UserDSName="VECHUYENBAY">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VECHUYENBAY" msprop:Generator_TableClassName="VECHUYENBAYDataTable" msprop:Generator_TableVarName="tableVECHUYENBAY" msprop:Generator_TablePropName="_VECHUYENBAY" msprop:Generator_RowDeletingName="VECHUYENBAYRowDeleting" msprop:Generator_RowChangingName="VECHUYENBAYRowChanging" msprop:Generator_RowEvHandlerName="VECHUYENBAYRowChangeEventHandler" msprop:Generator_RowDeletedName="VECHUYENBAYRowDeleted" msprop:Generator_UserTableName="VECHUYENBAY" msprop:Generator_RowChangedName="VECHUYENBAYRowChanged" msprop:Generator_RowEvArgName="VECHUYENBAYRowChangeEvent" msprop:Generator_RowClassName="VECHUYENBAYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MAVECHUYENBAY" msprop:Generator_ColumnVarNameInTable="columnMAVECHUYENBAY" msprop:Generator_ColumnPropNameInRow="MAVECHUYENBAY" msprop:Generator_ColumnPropNameInTable="MAVECHUYENBAYColumn" msprop:Generator_UserColumnName="MAVECHUYENBAY" type="xs:string" minOccurs="0" />
+              <xs:element name="MAHK" msprop:Generator_ColumnVarNameInTable="columnMAHK" msprop:Generator_ColumnPropNameInRow="MAHK" msprop:Generator_ColumnPropNameInTable="MAHKColumn" msprop:Generator_UserColumnName="MAHK" type="xs:string" minOccurs="0" />
+              <xs:element name="MACHUYENBAY" msprop:Generator_ColumnVarNameInTable="columnMACHUYENBAY" msprop:Generator_ColumnPropNameInRow="MACHUYENBAY" msprop:Generator_ColumnPropNameInTable="MACHUYENBAYColumn" msprop:Generator_UserColumnName="MACHUYENBAY" type="xs:string" minOccurs="0" />
+              <xs:element name="MAHANGVE" msprop:Generator_ColumnVarNameInTable="columnMAHANGVE" msprop:Generator_ColumnPropNameInRow="MAHANGVE" msprop:Generator_ColumnPropNameInTable="MAHANGVEColumn" msprop:Generator_UserColumnName="MAHANGVE" type="xs:string" minOccurs="0" />
+              <xs:element name="SDT" msprop:Generator_ColumnVarNameInTable="columnSDT" msprop:Generator_ColumnPropNameInRow="SDT" msprop:Generator_ColumnPropNameInTable="SDTColumn" msprop:Generator_UserColumnName="SDT" type="xs:string" minOccurs="0" />
+              <xs:element name="GIA" msprop:Generator_ColumnVarNameInTable="columnGIA" msprop:Generator_ColumnPropNameInRow="GIA" msprop:Generator_ColumnPropNameInTable="GIAColumn" msprop:Generator_UserColumnName="GIA" type="xs:string" minOccurs="0" />
+              <xs:element name="CMND" msprop:Generator_ColumnVarNameInTable="columnCMND" msprop:Generator_ColumnPropNameInRow="CMND" msprop:Generator_ColumnPropNameInTable="CMNDColumn" msprop:Generator_UserColumnName="CMND" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

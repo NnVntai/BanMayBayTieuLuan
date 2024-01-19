@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8443ADE-72BC-4926-8020-2B3ACA87016A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>banvemaybay</RootNamespace>
+    <AssemblyName>banvemaybay</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\CHITIETSLBUS.cs" />
+    <Compile Include="BUS\CHUYENBAYBUS.cs" />
+    <Compile Include="BUS\DATCHOBUS.cs" />
+    <Compile Include="BUS\HANGVEBUS.cs" />
+    <Compile Include="BUS\QUYDINHBUS.cs" />
+    <Compile Include="BUS\SANBAYBUS.cs" />
+    <Compile Include="BUS\SANBAYTRUNGGIANBUS.cs" />
+    <Compile Include="BUS\USERBUS.cs" />
+    <Compile Include="BUS\VAITROBUS.cs" />
+    <Compile Include="BUS\VECHUYENBAYBUS.cs" />
+    <Compile Include="DAO\CHITIETSLDAO.cs" />
+    <Compile Include="DAO\CHUYENBAYDAO.cs" />
+    <Compile Include="DAO\DATVEDAO.cs" />
+    <Compile Include="DAO\HANGVEDAO.cs" />
+    <Compile Include="DAO\KetnoiCSDL.cs" />
+    <Compile Include="DAO\QUYDINHDAO.cs" />
+    <Compile Include="DAO\SANBAYDAO.cs" />
+    <Compile Include="DAO\SANBAYTRUNGGIANDAO.cs" />
+    <Compile Include="DAO\USERDAO.cs" />
+    <Compile Include="DAO\VAITRODAO.cs" />
+    <Compile Include="DAO\VECHUYENBAYDAO.cs" />
+    <Compile Include="data\DANHSACHCHUYENBAY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DANHSACHCHUYENBAY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\DANHTHUTHEOTHANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DANHTHUTHEOTHANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\DATVE.cs">
+      <DependentUpon>DATVE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\DATVE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DATVE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\THONGCHUYENBAY.cs">
+      <DependentUpon>THONGCHUYENBAY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\THONGCHUYENBAY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THONGCHUYENBAY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data\VECHUYENBAY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VECHUYENBAY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CHITIETSLDTO.cs" />
+    <Compile Include="DTO\CHUYENBAYDTO.cs" />
+    <Compile Include="DTO\DATCHODDTO.cs" />
+    <Compile Include="DTO\HANGVEDTO.cs" />
+    <Compile Include="DTO\QUYDINHDTO.cs" />
+    <Compile Include="DTO\SANBAYDTO.cs" />
+    <Compile Include="DTO\SANBAYTRUNGGIANDTO.cs" />
+    <Compile Include="DTO\USERDTO.cs" />
+    <Compile Include="DTO\VAITRODTO.cs" />
+    <Compile Include="DTO\VECHUYENBAYDTO.cs" />
+    <Compile Include="GUIRP\BAOCAOTHEONAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIRP\BAOCAOTHEONAM.Designer.cs">
+      <DependentUpon>BAOCAOTHEONAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIRP\DANHSACHCHUYENBAYRF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIRP\DANHSACHCHUYENBAYRF.Designer.cs">
+      <DependentUpon>DANHSACHCHUYENBAYRF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIRP\DANHTHUTHEOTHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIRP\DANHTHUTHEOTHANG.Designer.cs">
+      <DependentUpon>DANHTHUTHEOTHANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIRP\DATVERF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIRP\DATVERF.Designer.cs">
+      <DependentUpon>DATVERF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIRP\THONGTINCHUYENBAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIRP\THONGTINCHUYENBAY.Designer.cs">
+      <DependentUpon>THONGTINCHUYENBAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIRP\VECHUYENBAYRF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIRP\VECHUYENBAYRF.Designer.cs">
+      <DependentUpon>VECHUYENBAYRF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CHUYENBAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CHUYENBAY.Designer.cs">
+      <DependentUpon>CHUYENBAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DANGKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DANGKY.Designer.cs">
+      <DependentUpon>DANGKY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DATVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DATVE.Designer.cs">
+      <DependentUpon>DATVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUIQUANLY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUIQUANLY.Designer.cs">
+      <DependentUpon>GUIQUANLY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUIUSER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUIUSER.Designer.cs">
+      <DependentUpon>GUIUSER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HANGVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HANGVE.Designer.cs">
+      <DependentUpon>HANGVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DATCHOCHUYENBAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DATCHOCHUYENBAY.Designer.cs">
+      <DependentUpon>DATCHOCHUYENBAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MUAVECHUYENBAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MUAVECHUYENBAY.Designer.cs">
+      <DependentUpon>MUAVECHUYENBAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QUANLYSOGHE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QUANLYSOGHE.Designer.cs">
+      <DependentUpon>QUANLYSOGHE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QUYDINH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QUYDINH.Designer.cs">
+      <DependentUpon>QUYDINH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SANBAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SANBAY.Designer.cs">
+      <DependentUpon>SANBAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SANBAYTRUNGGIAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SANBAYTRUNGGIAN.Designer.cs">
+      <DependentUpon>SANBAYTRUNGGIAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TEST.Designer.cs">
+      <DependentUpon>TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\THAYDOITHONGTIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\THAYDOITHONGTIN.Designer.cs">
+      <DependentUpon>THAYDOITHONGTIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\USER.Designer.cs">
+      <DependentUpon>USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\VAITRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\VAITRO.Designer.cs">
+      <DependentUpon>VAITRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\VECHUYENBAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\VECHUYENBAY.Designer.cs">
+      <DependentUpon>VECHUYENBAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RF\BAOCAOTHEONAM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAOCAOTHEONAM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RF\DANHSACHCHUYENBAY.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DANHSACHCHUYENBAY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RF\DANHTHUTHANG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DANHTHUTHANG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RF\DATVEMAYBAY.cs">
+      <DependentUpon>DATVEMAYBAY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RF\THONGTINCHUYENBAY.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THONGTINCHUYENBAY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RF\VECHUYENBAY.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VECHUYENBAY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="GUIRP\BAOCAOTHEONAM.resx">
+      <DependentUpon>BAOCAOTHEONAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIRP\DANHSACHCHUYENBAYRF.resx">
+      <DependentUpon>DANHSACHCHUYENBAYRF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIRP\DANHTHUTHEOTHANG.resx">
+      <DependentUpon>DANHTHUTHEOTHANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIRP\DATVERF.resx">
+      <DependentUpon>DATVERF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIRP\THONGTINCHUYENBAY.resx">
+      <DependentUpon>THONGTINCHUYENBAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIRP\VECHUYENBAYRF.resx">
+      <DependentUpon>VECHUYENBAYRF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CHUYENBAY.resx">
+      <DependentUpon>CHUYENBAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DANGKY.resx">
+      <DependentUpon>DANGKY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DATVE.resx">
+      <DependentUpon>DATVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUIQUANLY.resx">
+      <DependentUpon>GUIQUANLY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUIUSER.resx">
+      <DependentUpon>GUIUSER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HANGVE.resx">
+      <DependentUpon>HANGVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DATCHOCHUYENBAY.resx">
+      <DependentUpon>DATCHOCHUYENBAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MUAVECHUYENBAY.resx">
+      <DependentUpon>MUAVECHUYENBAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QUANLYSOGHE.resx">
+      <DependentUpon>QUANLYSOGHE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QUYDINH.resx">
+      <DependentUpon>QUYDINH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SANBAY.resx">
+      <DependentUpon>SANBAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SANBAYTRUNGGIAN.resx">
+      <DependentUpon>SANBAYTRUNGGIAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TEST.resx">
+      <DependentUpon>TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\THAYDOITHONGTIN.resx">
+      <DependentUpon>THAYDOITHONGTIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\USER.resx">
+      <DependentUpon>USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\VAITRO.resx">
+      <DependentUpon>VAITRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\VECHUYENBAY.resx">
+      <DependentUpon>VECHUYENBAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RF\BAOCAOTHEONAM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BAOCAOTHEONAM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RF\DANHSACHCHUYENBAY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DANHSACHCHUYENBAY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RF\DANHTHUTHANG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DANHTHUTHANG.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RF\DATVEMAYBAY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DATVEMAYBAY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RF\THONGTINCHUYENBAY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>THONGTINCHUYENBAY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RF\VECHUYENBAY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VECHUYENBAY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="data\DANHSACHCHUYENBAY.xsc">
+      <DependentUpon>DANHSACHCHUYENBAY.xsd</DependentUpon>
+    </None>
+    <None Include="data\DANHSACHCHUYENBAY.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DANHSACHCHUYENBAY.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data\DANHSACHCHUYENBAY.xss">
+      <DependentUpon>DANHSACHCHUYENBAY.xsd</DependentUpon>
+    </None>
+    <None Include="data\DANHTHUTHEOTHANG.xsc">
+      <DependentUpon>DANHTHUTHEOTHANG.xsd</DependentUpon>
+    </None>
+    <None Include="data\DANHTHUTHEOTHANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DANHTHUTHEOTHANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data\DANHTHUTHEOTHANG.xss">
+      <DependentUpon>DANHTHUTHEOTHANG.xsd</DependentUpon>
+    </None>
+    <None Include="data\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="data\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="data\DATVE.xsc">
+      <DependentUpon>DATVE.xsd</DependentUpon>
+    </None>
+    <None Include="data\DATVE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DATVE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data\DATVE.xss">
+      <DependentUpon>DATVE.xsd</DependentUpon>
+    </None>
+    <None Include="data\THONGCHUYENBAY.xsc">
+      <DependentUpon>THONGCHUYENBAY.xsd</DependentUpon>
+    </None>
+    <None Include="data\THONGCHUYENBAY.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THONGCHUYENBAY.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data\THONGCHUYENBAY.xss">
+      <DependentUpon>THONGCHUYENBAY.xsd</DependentUpon>
+    </None>
+    <None Include="data\VECHUYENBAY.xsc">
+      <DependentUpon>VECHUYENBAY.xsd</DependentUpon>
+    </None>
+    <None Include="data\VECHUYENBAY.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VECHUYENBAY.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data\VECHUYENBAY.xss">
+      <DependentUpon>VECHUYENBAY.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ve-may-bay-gia-re.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="e7bb8fe79086e6a682e5bfb5e4be8be8af81-117144791-1568994338613106205694.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="470-4703547_icon-user-icon-hd-png-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="thiet-ke-ghe-may-bay-kieu-moi-155329.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="104-1041474_png-keys-locks-transparent-hnh-nh-ci-kha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="photo-1-15858767016252034736476.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

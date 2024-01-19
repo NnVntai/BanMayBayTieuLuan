@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DANHSACHCHUYENBAY" targetNamespace="http://tempuri.org/DANHSACHCHUYENBAY.xsd" xmlns:mstns="http://tempuri.org/DANHSACHCHUYENBAY.xsd" xmlns="http://tempuri.org/DANHSACHCHUYENBAY.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DANHSACHCHUYENBAY" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DANHSACHCHUYENBAY" msprop:Generator_UserDSName="DANHSACHCHUYENBAY">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SANBAY" msprop:Generator_TableClassName="SANBAYDataTable" msprop:Generator_TableVarName="tableSANBAY" msprop:Generator_TablePropName="SANBAY" msprop:Generator_RowDeletingName="SANBAYRowDeleting" msprop:Generator_RowChangingName="SANBAYRowChanging" msprop:Generator_RowEvHandlerName="SANBAYRowChangeEventHandler" msprop:Generator_RowDeletedName="SANBAYRowDeleted" msprop:Generator_UserTableName="SANBAY" msprop:Generator_RowChangedName="SANBAYRowChanged" msprop:Generator_RowEvArgName="SANBAYRowChangeEvent" msprop:Generator_RowClassName="SANBAYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MACHUYENBAY" msprop:Generator_ColumnVarNameInTable="columnMACHUYENBAY" msprop:Generator_ColumnPropNameInRow="MACHUYENBAY" msprop:Generator_ColumnPropNameInTable="MACHUYENBAYColumn" msprop:Generator_UserColumnName="MACHUYENBAY" type="xs:string" minOccurs="0" />
+              <xs:element name="MASANBAYDI" msprop:Generator_ColumnVarNameInTable="columnMASANBAYDI" msprop:Generator_ColumnPropNameInRow="MASANBAYDI" msprop:Generator_ColumnPropNameInTable="MASANBAYDIColumn" msprop:Generator_UserColumnName="MASANBAYDI" type="xs:string" minOccurs="0" />
+              <xs:element name="MASANBAYDEN" msprop:Generator_ColumnVarNameInTable="columnMASANBAYDEN" msprop:Generator_ColumnPropNameInRow="MASANBAYDEN" msprop:Generator_ColumnPropNameInTable="MASANBAYDENColumn" msprop:Generator_UserColumnName="MASANBAYDEN" type="xs:string" minOccurs="0" />
+              <xs:element name="NGAYGIO" msprop:Generator_ColumnVarNameInTable="columnNGAYGIO" msprop:Generator_ColumnPropNameInRow="NGAYGIO" msprop:Generator_ColumnPropNameInTable="NGAYGIOColumn" msprop:Generator_UserColumnName="NGAYGIO" type="xs:string" minOccurs="0" />
+              <xs:element name="THOIGIAN" msprop:Generator_ColumnVarNameInTable="columnTHOIGIAN" msprop:Generator_ColumnPropNameInRow="THOIGIAN" msprop:Generator_ColumnPropNameInTable="THOIGIANColumn" msprop:Generator_UserColumnName="THOIGIAN" type="xs:string" minOccurs="0" />
+              <xs:element name="SOGHETRONG" msprop:Generator_ColumnVarNameInTable="columnSOGHETRONG" msprop:Generator_ColumnPropNameInRow="SOGHETRONG" msprop:Generator_ColumnPropNameInTable="SOGHETRONGColumn" msprop:Generator_UserColumnName="SOGHETRONG" type="xs:string" minOccurs="0" />
+              <xs:element name="SOGHEDAT" msprop:Generator_ColumnVarNameInTable="columnSOGHEDAT" msprop:Generator_ColumnPropNameInRow="SOGHEDAT" msprop:Generator_ColumnPropNameInTable="SOGHEDATColumn" msprop:Generator_UserColumnName="SOGHEDAT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
